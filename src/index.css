@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-color: #f6f6f6;
+  --foreground-color: #003cff;
+  --primary-text-color: #0a0a0a;
+  --secondary-text-color: #ffffff;
+  --toggle-bg: #812791;
+  --toggle-fg: #ff85fd;
+}
+
+[data-theme="dark"] {
+  --background-color: #0a0a0a;
+  --foreground-color: #567aff;
+  --primary-text-color: #f6f6f6;
+  --secondary-text-color: #ffffff; /* Set to white for better contrast */
+  --toggle-bg: #283452;
+  --toggle-fg: #00a6ff;
+}
+
+/* Background and text colors */
+body {
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
+ 
+    overflow-x: hidden;
+
+  
+}
+
+[data-theme="dark"] body {
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
+}
+
+/* Navlink styles */
+.nav-link {
+  color: var(--primary-text-color);
+}
+
+[data-theme="dark"] .nav-link {
+  color: var(--secondary-text-color);
+}
+
+/* Heading styles */
+.heading {
+  color: var(--primary-text-color);
+}
+
+[data-theme="dark"] .heading {
+  color: var(--secondary-text-color);
+}
+
+/* Toggle button styles */
+.toggle-button {
+  background-color: var(--toggle-bg);
+  color: var(--toggle-fg);
+  border: 2px solid var(--toggle-fg);
+  border-radius: 9999px; /* Makes it rounded */
+  padding: 0.25rem 0.5rem; /* Adds some padding */
+}
+
+[data-theme="dark"] .toggle-button {
+  background-color: var(--toggle-bg);
+  color: var(--toggle-fg);
+  border: 2px solid var(--toggle-fg);
+}
+
+.text-primary {
+  color: var(--primary-text-color);
+}
+.text-secondary {
+  color: var(--secondary-text-color);
+}

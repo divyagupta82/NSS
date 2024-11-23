@@ -1,0 +1,40 @@
+.navbar {
+    background:linear-gradient(90deg, #d41e79, #f82bff); /* Gradient from pink to red */
+    padding: 0.5em 1em;
+    overflow: hidden;
+    display: flex;
+    align-items: center; /* Vertically centers the text */
+    justify-content: center; /* Horizontally centers the scroll within the navbar */
+    height: 40px; /* Fixed height */
+  }
+  
+  .scroll {
+    white-space: nowrap;
+    margin: 0 2em;
+  }
+  
+  .scroll div {
+    display: flex;
+    gap: 1em; /* Reduced gap for a more compact look */
+  }
+  
+  .scroll p {
+    font-size: 1.5em; /* Adjust font size for better fit */
+    color: #ffffff;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.5; /* Center text vertically within its line box */
+  }
+  
+  .RightToLeft {
+    animation: RightToLeft 15s infinite linear;
+  }
+  
+  @keyframes RightToLeft {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
